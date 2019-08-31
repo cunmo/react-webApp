@@ -10,15 +10,7 @@ class Classify extends Component {
                        123123131231让外人
                         <div>12334412</div>
                         <div>12334412</div>
-                        <div>12334412</div>
-                        <div>12334412</div>
-                        <div>12334412</div>
-                        <div>12334412</div>
-                        <div>12334412</div>
-                        <div>12334412</div>
-                        <div>12334412</div>
-                        <div>12334412</div>
-                        <div>12334412</div>
+          
                 </DivContener>
             </Fragment>
         )
