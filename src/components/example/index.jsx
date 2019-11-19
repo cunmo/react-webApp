@@ -4,23 +4,25 @@ export default class Demo extends Component {
     constructor() {
         super()
         this.state = {
-            left:0
+            dir:'left'
         }
         this.clickHand = this.clickHand.bind(this)
     }
-    clickHand() {
-        this.setState({
-            left:'70px'
-        })
+    clickHand(dir) {
+       this.setState({
+            dir
+       })
     }
     render() {
-        const {left} = this.state
+        const { dir } = this.state
         return (
             <Fragment>
-                <Header left={left}>
-                    <div onClick={this.clickHand}>
+                <Header move={ dir }>
+                    <nav>
+                        <div onClick={()=> this.clickHand('left')}></div>
+                        <div onClick={()=> this.clickHand('right')}></div>
                         <div></div>
-                    </div>
+                    </nav>
                 </Header>
             </Fragment>
         )
