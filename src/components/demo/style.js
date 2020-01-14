@@ -3,11 +3,11 @@ import Styled from 'styled-components'
 const borderstyle = 'dotted'
 
 const Header = Styled.div`
-    width:100px;
-    height:200px;
-    background:skyblue;
+    width: 100px;
+    height: 200px;
+    background: skyblue;
     /* 传参数 */
-    border: 5px ${borderstyle === 'dotted' ? borderstyle : 'solid'}  ${props => props.border};
+    border: 5px ${borderstyle === 'dotted' ? borderstyle : 'solid'}   ${props => props.border};
     div:nth-child(1) {
         width:100px;
         height:100px;
@@ -31,7 +31,7 @@ const Attr =Styled.div.attrs({
         color:blue;
     }
 `
-
+// 继承
 const Navlist = Styled(Header)`
      div{
          color:#0f0;

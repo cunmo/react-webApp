@@ -4,7 +4,7 @@ export default class Example extends Component {
     constructor() {
         super();
         this.state = {
-            bordercolor: 'red',
+            bordercolor: 'blue',
             number:0
         }
         this.clickHand = this.clickHand.bind(this)
